@@ -14,7 +14,7 @@ let guess = [];
 wordsDiv.addEventListener("keyup", (e) => {
 	let element = e.target;
 
-	if (e.keyCode == 8) {
+	if (e.keyCode == 8 && !element.previousElementSibling.disabled) {
 		element.previousElementSibling.focus();
 		element.previousElementSibling.value = "";
 		guess.pop();
