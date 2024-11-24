@@ -95,3 +95,18 @@ span {
 	transform: rotateY("180deg");
 	transition: 1s;
 }
+
+@media (max-width: 420px) {
+	.title {
+		font-size: 40px;
+		margin-top: 10px;
+	}
+	#words-div {
+		width: 300px;
+		gap: 5px;
+	}
+	.letter {
+		width: 40px;
+		height: 40px;
+	}
+}
