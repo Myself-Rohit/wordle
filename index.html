@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./index.css" />
+    <title>WORDLE</title>
+  </head>
+  <body>
+    <div class="home">
+      <form onsubmit="handleSubmit(event),action='./game.html' " class="form">
+        <h1 class="form-heading">Welcome to wordle</h1>
+        <p>What's your Good Name?</p>
+        <input
+          class="form-input"
+          type="text"
+          placeholder="Your Name"
+          value=""
+        />
+        <button class="form-btn" type="submit">Submit</button>
+      </form>
+    </div>
+    <script>
+      const handleSubmit = (event) => {
+        event.preventDefault();
+        const name = document.querySelector(".form-input");
+        JSON.stringify(localStorage.setItem("username", name.value));
+        if (name.value) {
+          window.location.href = "/game.html";
+        }
+      };
+    </script>
+  </body>
+</html>
