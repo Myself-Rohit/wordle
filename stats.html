@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Win Streek:<span class="streek">0</span></h1>
+    <h1>Total win:<span class="totalWin">0</span></h1>
+    <h1>Total Lost:<span class="totalLost">0</span></h1>
+  </body>
+  <script>
+    const stats = JSON.parse(localStorage.getItem("stats")) || null;
+    const streek = document.querySelector(".streek");
+    const totalWin = document.querySelector(".totalWin");
+    const totalLost = document.querySelector(".totalLost");
+
+    streek.innerHTML = stats.streek;
+    totalWin.innerHTML = stats.totalWin;
+    totalLost.innerHTML = stats.totalLost;
+  </script>
+</html>
