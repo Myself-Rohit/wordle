@@ -1,68 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>WORDLE</title>
-		<link rel="stylesheet" href="./game.css" />
-	</head>
-	<body>
-		<h1 class="title">WORDLE</h1>
-		<div class="resultInfo">
-			<div>
-				<h2 class="result">The word is <span id="word">Guard</span></h2>
-				<p class="win-result">You won</p>
-				<h3>Thanks for playing today!</h3>
-				<p>Want to start tracking your stats and streaks?</p>
-				<a class="play-btn" href="./game.html">Play Again</a>
-			</div>
-		</div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WORDLE</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <h1 class="title">
+      WORDLE<span class="chance-div">❤️<span class="chance">6</span></span>
+    </h1>
 
-		<div id="words-div">
-			<input
-				class="letter"
-				type="text"
-				maxlength="1"
-				id="0"
-				autofocus
-				value=""
-			/>
-			<input class="letter" type="text" maxlength="1" id="1" value="" />
-			<input class="letter" type="text" maxlength="1" id="2" value="" />
-			<input class="letter" type="text" maxlength="1" id="3" value="" />
-			<input class="letter" type="text" maxlength="1" id="4" value="" />
-			<input class="letter" type="text" maxlength="1" id="5" value="" />
-			<input class="letter" type="text" maxlength="1" id="6" value="" />
-			<input class="letter" type="text" maxlength="1" id="7" value="" />
-			<input class="letter" type="text" maxlength="1" id="8" value="" />
-			<input class="letter" type="text" maxlength="1" id="9" value="" />
-			<input class="letter" type="text" maxlength="1" id="10" value="" />
-			<input class="letter" type="text" maxlength="1" id="11" value="" />
-			<input class="letter" type="text" maxlength="1" id="12" value="" />
-			<input class="letter" type="text" maxlength="1" id="13" value="" />
-			<input class="letter" type="text" maxlength="1" id="14" value="" />
-			<input class="letter" type="text" maxlength="1" id="15" value="" />
-			<input class="letter" type="text" maxlength="1" id="16" value="" />
-			<input class="letter" type="text" maxlength="1" id="17" value="" />
-			<input class="letter" type="text" maxlength="1" id="18" value="" />
-			<input class="letter" type="text" maxlength="1" id="19" value="" />
-			<input class="letter" type="text" maxlength="1" id="20" value="" />
-			<input class="letter" type="text" maxlength="1" id="21" value="" />
-			<input class="letter" type="text" maxlength="1" id="22" value="" />
-			<input class="letter" type="text" maxlength="1" id="23" value="" />
-			<input class="letter" type="text" maxlength="1" id="24" value="" />
-			<input class="letter" type="text" maxlength="1" id="25" value="" />
-			<input class="letter" type="text" maxlength="1" id="26" value="" />
-			<input class="letter" type="text" maxlength="1" id="27" value="" />
-			<input class="letter" type="text" maxlength="1" id="28" value="" />
-			<input class="letter" type="text" maxlength="1" id="29" value="" />
-			<input class="letter" type="text" maxlength="1" id="30" value="" />
-			<input class="letter" type="text" maxlength="1" id="31" value="" />
-			<input class="letter" type="text" maxlength="1" id="32" value="" />
-			<input class="letter" type="text" maxlength="1" id="33" value="" />
-			<input class="letter" type="text" maxlength="1" id="34" value="" />
-			<input class="letter" type="text" maxlength="1" id="35" value="" />
-		</div>
-		<script type="module" src="game.js"></script>
-	</body>
+    <div class="resultInfo">
+      <h2 class="result">The word is <span id="word">Guard</span></h2>
+      <p class="win-result">You won</p>
+      <h3>Thanks for playing today!</h3>
+      <p>Want to start tracking your stats and streaks?</p>
+      <a class="play-btn" href="./game.html">Play Again</a>
+      <a class="play-btn" href="./stats.html">stats</a>
+    </div>
+    <h1 class="subheading" align="center">🤔Guess the word 🤔</h1>
+    <div id="words-div">
+      <input
+        class="letter"
+        type="text"
+        maxlength="1"
+        id="0"
+        autofocus
+        value=""
+      />
+      <input class="letter" type="text" maxlength="1" id="1" value="" />
+      <input class="letter" type="text" maxlength="1" id="2" value="" />
+      <input class="letter" type="text" maxlength="1" id="3" value="" />
+      <input class="letter" type="text" maxlength="1" id="4" value="" />
+      <input class="letter" type="text" maxlength="1" id="5" value="" />
+      <input class="letter" type="text" maxlength="1" id="6" value="" />
+      <input class="letter" type="text" maxlength="1" id="7" value="" />
+      <input class="letter" type="text" maxlength="1" id="8" value="" />
+      <input class="letter" type="text" maxlength="1" id="9" value="" />
+      <input class="letter" type="text" maxlength="1" id="10" value="" />
+      <input class="letter" type="text" maxlength="1" id="11" value="" />
+      <input class="letter" type="text" maxlength="1" id="12" value="" />
+      <input class="letter" type="text" maxlength="1" id="13" value="" />
+      <input class="letter" type="text" maxlength="1" id="14" value="" />
+      <input class="letter" type="text" maxlength="1" id="15" value="" />
+      <input class="letter" type="text" maxlength="1" id="16" value="" />
+      <input class="letter" type="text" maxlength="1" id="17" value="" />
+      <input class="letter" type="text" maxlength="1" id="18" value="" />
+      <input class="letter" type="text" maxlength="1" id="19" value="" />
+      <input class="letter" type="text" maxlength="1" id="20" value="" />
+      <input class="letter" type="text" maxlength="1" id="21" value="" />
+      <input class="letter" type="text" maxlength="1" id="22" value="" />
+      <input class="letter" type="text" maxlength="1" id="23" value="" />
+      <input class="letter" type="text" maxlength="1" id="24" value="" />
+      <input class="letter" type="text" maxlength="1" id="25" value="" />
+      <input class="letter" type="text" maxlength="1" id="26" value="" />
+      <input class="letter" type="text" maxlength="1" id="27" value="" />
+      <input class="letter" type="text" maxlength="1" id="28" value="" />
+      <input class="letter" type="text" maxlength="1" id="29" value="" />
+      <input class="letter" type="text" maxlength="1" id="30" value="" />
+      <input class="letter" type="text" maxlength="1" id="31" value="" />
+      <input class="letter" type="text" maxlength="1" id="32" value="" />
+      <input class="letter" type="text" maxlength="1" id="33" value="" />
+      <input class="letter" type="text" maxlength="1" id="34" value="" />
+      <input class="letter" type="text" maxlength="1" id="35" value="" />
+    </div>
+    <script type="module" src="app.js"></script>
+  </body>
 </html>
